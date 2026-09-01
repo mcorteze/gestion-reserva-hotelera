@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+*.docx
+*.xlsx
+~$*
+*.tmp
+.DS_Store
