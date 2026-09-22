@@ -1,0 +1,160 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="diagrama-clases" name="Diagrama de Clases">
+<mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1203" pageHeight="1036" math="0" shadow="0">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <mxCell id="clase-usuario" value="Usuario" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;fontColor=#17224D;fillColor=#EAF2FD;strokeColor=#2E75D6;swimlaneFillColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="526" y="50" width="170" height="175" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-usuario-atributos" value="id&lt;br&gt;nombre&lt;br&gt;correo&lt;br&gt;contrasenaHash&lt;br&gt;idioma" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;spacingTop=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="clase-usuario">
+      <mxGeometry y="32" width="170" height="93" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-usuario-separador" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="clase-usuario">
+      <mxGeometry y="125" width="170" height="8" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-usuario-metodos" value="iniciarSesion()&lt;br&gt;cerrarSesion()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;spacingTop=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="clase-usuario">
+      <mxGeometry y="133" width="170" height="42" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-administradorReservas" value="AdministradorReservas" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;fontColor=#17224D;fillColor=#EAF2FD;strokeColor=#2E75D6;swimlaneFillColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="50" y="315" width="189" height="104" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-administradorReservas-atributos" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;spacingTop=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="clase-administradorReservas">
+      <mxGeometry y="32" width="189" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-administradorReservas-separador" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="clase-administradorReservas">
+      <mxGeometry y="54" width="189" height="8" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-administradorReservas-metodos" value="administrarReserva(reserva)&lt;br&gt;actualizarCatalogo(habitacion)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;spacingTop=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="clase-administradorReservas">
+      <mxGeometry y="62" width="189" height="42" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-cliente" value="Cliente" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;fontColor=#17224D;fillColor=#EAF2FD;strokeColor=#2E75D6;swimlaneFillColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="309" y="315" width="267" height="141" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-cliente-atributos" value="telefono" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;spacingTop=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="clase-cliente">
+      <mxGeometry y="32" width="267" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-cliente-separador" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="clase-cliente">
+      <mxGeometry y="57" width="267" height="8" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-cliente-metodos" value="registrarse()&lt;br&gt;consultarDisponibilidad(fechaInicio, fechaFin)&lt;br&gt;reservarHabitacion(habitacion, dias)&lt;br&gt;pagarReserva(reserva)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;spacingTop=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="clase-cliente">
+      <mxGeometry y="65" width="267" height="76" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-administradorHotel" value="AdministradorHotel" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;fontColor=#17224D;fillColor=#EAF2FD;strokeColor=#2E75D6;swimlaneFillColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="670.5" y="315" width="218" height="138" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-administradorHotel-atributos" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;spacingTop=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="clase-administradorHotel">
+      <mxGeometry y="32" width="218" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-administradorHotel-separador" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="clase-administradorHotel">
+      <mxGeometry y="54" width="218" height="8" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-administradorHotel-metodos" value="actualizarPrecios(habitacion, precio)&lt;br&gt;generarReporte(periodo)&lt;br&gt;administrarCuentaTrabajador()&lt;br&gt;administrarCuentaCliente()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;spacingTop=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="clase-administradorHotel">
+      <mxGeometry y="62" width="218" height="76" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-personalHotel" value="PersonalHotel" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;fontColor=#17224D;fillColor=#EAF2FD;strokeColor=#2E75D6;swimlaneFillColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="983" y="315" width="170" height="87" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-personalHotel-atributos" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;spacingTop=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="clase-personalHotel">
+      <mxGeometry y="32" width="170" height="22" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-personalHotel-separador" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="clase-personalHotel">
+      <mxGeometry y="54" width="170" height="8" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-personalHotel-metodos" value="consultarServicio(reserva)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;spacingTop=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="clase-personalHotel">
+      <mxGeometry y="62" width="170" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-ticket" value="Ticket" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;fontColor=#17224D;fillColor=#EAF2FD;strokeColor=#2E75D6;swimlaneFillColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="59.5" y="546" width="170" height="141" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-ticket-atributos" value="id&lt;br&gt;codigoQR&lt;br&gt;fechaEmision" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;spacingTop=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="clase-ticket">
+      <mxGeometry y="32" width="170" height="59" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-ticket-separador" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="clase-ticket">
+      <mxGeometry y="91" width="170" height="8" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-ticket-metodos" value="generarTicket()&lt;br&gt;enviarPorCorreo()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;spacingTop=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="clase-ticket">
+      <mxGeometry y="99" width="170" height="42" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-reserva" value="Reserva" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;fontColor=#17224D;fillColor=#EAF2FD;strokeColor=#2E75D6;swimlaneFillColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="357.5" y="546" width="170" height="192" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-reserva-atributos" value="id&lt;br&gt;fechaInicio&lt;br&gt;fechaFin&lt;br&gt;valorTotal&lt;br&gt;montoPagado&lt;br&gt;estado" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;spacingTop=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="clase-reserva">
+      <mxGeometry y="32" width="170" height="110" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-reserva-separador" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="clase-reserva">
+      <mxGeometry y="142" width="170" height="8" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-reserva-metodos" value="calcularValor()&lt;br&gt;confirmarDisponibilidad()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;spacingTop=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="clase-reserva">
+      <mxGeometry y="150" width="170" height="42" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-habitacion" value="Habitacion" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;fontColor=#17224D;fillColor=#EAF2FD;strokeColor=#2E75D6;swimlaneFillColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="646" y="546" width="267" height="175" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-habitacion-atributos" value="id&lt;br&gt;numero&lt;br&gt;categoria&lt;br&gt;caracteristicas&lt;br&gt;equipamiento&lt;br&gt;precioDiario" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;spacingTop=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="clase-habitacion">
+      <mxGeometry y="32" width="267" height="110" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-habitacion-separador" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="clase-habitacion">
+      <mxGeometry y="142" width="267" height="8" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-habitacion-metodos" value="consultarDisponibilidad(fechaInicio, fechaFin)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;spacingTop=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="clase-habitacion">
+      <mxGeometry y="150" width="267" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-pago" value="Pago" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fontSize=14;fontColor=#17224D;fillColor=#EAF2FD;strokeColor=#2E75D6;swimlaneFillColor=#FFFFFF;" vertex="1" parent="1">
+      <mxGeometry x="357.5" y="828" width="170" height="158" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-pago-atributos" value="id&lt;br&gt;monto&lt;br&gt;fecha&lt;br&gt;metodo&lt;br&gt;estado" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;spacingTop=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="clase-pago">
+      <mxGeometry y="32" width="170" height="93" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-pago-separador" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="clase-pago">
+      <mxGeometry y="125" width="170" height="8" as="geometry"/>
+    </mxCell>
+    <mxCell id="clase-pago-metodos" value="procesarPago()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;spacingTop=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="clase-pago">
+      <mxGeometry y="133" width="170" height="25" as="geometry"/>
+    </mxCell>
+    <mxCell id="relacion-0" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#4B5563;strokeWidth=1.5;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="clase-administradorReservas" target="clase-usuario">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="relacion-1" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#4B5563;strokeWidth=1.5;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="clase-cliente" target="clase-usuario">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="relacion-2" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#4B5563;strokeWidth=1.5;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="clase-administradorHotel" target="clase-usuario">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="relacion-3" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#4B5563;strokeWidth=1.5;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="clase-personalHotel" target="clase-usuario">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="relacion-4" style="endArrow=none;html=1;rounded=0;strokeColor=#4B5563;strokeWidth=1.5;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;" edge="1" parent="1" source="clase-cliente" target="clase-reserva">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="relacion-4-origen" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#17224D;" vertex="1" connectable="0" parent="relacion-4">
+      <mxGeometry x="-0.8" relative="1" as="geometry"><mxPoint x="8" y="0" as="offset"/></mxGeometry>
+    </mxCell>
+    <mxCell id="relacion-4-destino" value="*" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#17224D;" vertex="1" connectable="0" parent="relacion-4">
+      <mxGeometry x="0.8" relative="1" as="geometry"><mxPoint x="8" y="0" as="offset"/></mxGeometry>
+    </mxCell>
+    <mxCell id="relacion-5" style="endArrow=none;html=1;rounded=0;strokeColor=#4B5563;strokeWidth=1.5;exitX=0.0000;exitY=0.5000;exitDx=0;exitDy=0;entryX=1.0000;entryY=0.4557;entryDx=0;entryDy=0;" edge="1" parent="1" source="clase-habitacion" target="clase-reserva">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="relacion-5-origen" value="1" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=bottom;fontSize=12;fontStyle=1;fontColor=#17224D;" vertex="1" connectable="0" parent="relacion-5">
+      <mxGeometry x="-0.8" relative="1" as="geometry"><mxPoint x="0" y="-4" as="offset"/></mxGeometry>
+    </mxCell>
+    <mxCell id="relacion-5-destino" value="*" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=bottom;fontSize=12;fontStyle=1;fontColor=#17224D;" vertex="1" connectable="0" parent="relacion-5">
+      <mxGeometry x="0.8" relative="1" as="geometry"><mxPoint x="0" y="-4" as="offset"/></mxGeometry>
+    </mxCell>
+    <mxCell id="relacion-6" style="startArrow=diamondThin;startFill=1;startSize=16;endArrow=none;html=1;rounded=0;strokeColor=#4B5563;strokeWidth=1.5;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.5000;entryY=0.0000;entryDx=0;entryDy=0;" edge="1" parent="1" source="clase-reserva" target="clase-pago">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="relacion-6-origen" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#17224D;" vertex="1" connectable="0" parent="relacion-6">
+      <mxGeometry x="-0.55" relative="1" as="geometry"><mxPoint x="8" y="0" as="offset"/></mxGeometry>
+    </mxCell>
+    <mxCell id="relacion-6-destino" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#17224D;" vertex="1" connectable="0" parent="relacion-6">
+      <mxGeometry x="0.8" relative="1" as="geometry"><mxPoint x="8" y="0" as="offset"/></mxGeometry>
+    </mxCell>
+    <mxCell id="relacion-7" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;strokeColor=#2E75D6;strokeWidth=1.5;exitX=1.0000;exitY=0.5000;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.3672;entryDx=0;entryDy=0;" edge="1" parent="1" source="clase-ticket" target="clase-reserva">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>
+  </diagram>
+</mxfile>
