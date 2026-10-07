@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: gestion-reserva-hotelera
+    runtime: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: npm start
+    healthCheckPath: /api/estado
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: JWT_SECRETO
+        generateValue: true

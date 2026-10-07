@@ -1,0 +1,14 @@
+{
+  "name": "gestion-reserva-hotelera",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sistema de gestión de reservas del Hotel Pacific Reef",
+  "scripts": {
+    "build": "cd backend && npm install && cd ../frontend && npm install --include=dev && npm run build",
+    "start": "cd backend && npm start",
+    "test": "cd backend && npm test && cd ../frontend && npm test"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
