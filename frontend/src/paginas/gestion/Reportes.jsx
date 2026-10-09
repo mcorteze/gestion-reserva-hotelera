@@ -3,6 +3,8 @@ import { api } from '../../api.js';
 import { Aviso, Cargando, Encabezado, Estado } from '../../componentes/Comunes.jsx';
 import { clp, fechaLarga, hoyIso } from '../../formato.js';
 
+const plural = (cantidad, singular, varios) => `${cantidad} ${cantidad === 1 ? singular : varios}`;
+
 // HU-17 / RF.17: reportes
 export default function Reportes() {
   const mesActual = hoyIso().slice(0, 7);
@@ -58,8 +60,8 @@ export default function Reportes() {
         <>
           <div className="indicadores">
             <div className="indicador"><p>Reservas</p><strong>{reporte.totales.cantidad}</strong>
-              <span>{reporte.totales.canceladas} canceladas fuera del total</span></div>
-            <div className="indicador"><p>Noches vendidas</p><strong>{reporte.totales.noches}</strong><span>{reporte.totales.pendientes} reservas pendientes de pago</span></div>
+              <span>{plural(reporte.totales.canceladas, 'cancelada', 'canceladas')} fuera del total</span></div>
+            <div className="indicador"><p>Noches vendidas</p><strong>{reporte.totales.noches}</strong><span>{plural(reporte.totales.pendientes, 'reserva pendiente de pago', 'reservas pendientes de pago')}</span></div>
             <div className="indicador"><p>Monto del periodo</p><strong>{clp(reporte.totales.monto_total)}</strong><span>CLP · abonado {clp(reporte.totales.monto_pagado)}</span></div>
             <div className="indicador"><p>Ticket promedio</p><strong>{clp(reporte.totales.ticket_promedio)}</strong><span>Por reserva</span></div>
           </div>

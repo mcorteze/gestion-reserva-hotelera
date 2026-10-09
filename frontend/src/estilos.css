@@ -210,7 +210,7 @@ img { max-width: 100%; display: block; }
 .tabla th { text-align: left; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--texto-suave); background: var(--primario-suave); padding: 10px 12px; white-space: nowrap; }
 .tabla td { padding: 12px; border-bottom: 1px solid var(--borde); vertical-align: top; }
 .tabla input { max-width: 180px; }
-.tabla .acciones, .tabla td:first-child { white-space: nowrap; }
+.tabla .acciones, .tabla tr:not(.fila-detalle) td:first-child { white-space: nowrap; }
 .tabla tr.es-seleccionada td { background: #f6f3ee; }
 .fila-detalle td { background: #f6f3ee; }
 
